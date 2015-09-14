@@ -9,28 +9,41 @@ public class Counter{
         
         int result = uniqueCounter(chars);
         System.out.println("Det finns "+result+ "unika tecken");
+		
     }
  public static int uniqueCounter(char[] arrayen){
         int counter = 0;
-        boolean found = false;
-        char[] found = new char[10];
+        boolean foundIt = false;
+        char[] found = new char[30];
 
         
         for (int i = 0; i < arrayen.length; i++){
+            char temp = arrayen[i];
             
-            
-            for(int j = 0; j < arrayen.length; j++){
-                 if (arrayen[i] == arrayen[j]){
-                     found=true;
-                     
+            for(int j = 0; j < found.length; j++){
+                 if (temp == found[j]){
+                    foundIt=true; 
+					break; 
                  }
-                 if (found){
-                    counter++;
-                 }
+				 else{foundIt=false;}
+			 
+                 
             }
-            found=false;
+			if(foundIt == false){
+				found[counter] = arrayen[i];
+				System.out.println(found[counter]);
+				counter++;
+			}
+			
+            foundIt=false;
         }
-        return counter;
+		char[] unique = new char[counter];
+		System.arraycopy(found, 0, unique, 0, counter);
+		String temp = new String(unique);
+		System.out.println(temp);
+		int result = unique.length;
+		
+        return result;
     }
     
     
