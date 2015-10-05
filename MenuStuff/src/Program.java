@@ -1,7 +1,6 @@
-import java.util.ArrayList;
-
 import menusystem.Menu;
 import menusystem.MenuConsole;
+
 
 public class Program {
 	public Program(){
@@ -15,7 +14,7 @@ public class Program {
 		menuSwitch(((MenuConsole)menu).printMenu());
 		
 	}
-	
+
 	public void menuSwitch(int selector){
 		
 		switch(selector){
