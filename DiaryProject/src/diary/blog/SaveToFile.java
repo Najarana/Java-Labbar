@@ -45,7 +45,7 @@ public class SaveToFile {
 			Unmarshaller jaxbUnmarshaller;
 			jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			blogFile = (Blog) jaxbUnmarshaller.unmarshal(file); 
-
+			//postList.add(post);
 			
 			
 			
