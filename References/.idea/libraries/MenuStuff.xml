@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="MenuStuff">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../MenuStuff" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../MenuStuff/src" />
+    </SOURCES>
+  </library>
+</component>
